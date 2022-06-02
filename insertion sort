@@ -1,0 +1,13 @@
+def insertionsort(s):
+    for index in range(1,len(s)):
+        ce=s[index]
+        pos=index
+        while ce<s[pos-1]and pos>0:
+            s[pos]=s[pos-1]
+            pos=pos-1
+        s[pos]=ce
+s=[1,5,3,4,2]
+print(s)
+insertionsort(s)
+print(s)
+        
